@@ -1,4 +1,4 @@
-require "jwauth/railtie"
+require 'jwauth/railtie'
 
 module Jwauth
   # Your code goes here...

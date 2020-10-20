@@ -1,0 +1,23 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  Exclude:
+    - bin/**/*
+    - test/**/*
+Layout/LineLength:
+  Max: 120
+  IgnoreCopDirectives: true
+Lint/MissingCopEnableDirective:
+  Enabled: false
+Lint/RedundantCopDisableDirective:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
