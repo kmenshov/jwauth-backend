@@ -52,8 +52,8 @@ Jwauth.configure do |config, receivers|
 end
 ```
 
-Then in controllers you will get the following methods to use in your session:
-`jwt_inbound_token` - raw inbound token;
+Then in controllers you will get the following methods to use in your session:  
+`jwt_inbound_token` - raw inbound token;  
 `jwt_inbound_hash`  - decoded hash (or empty hash if JWT expired, wrong secret, etc.).
 
 Your HTML controller(s) should implement a `#session_data` method which should return a hash. This hash will be encoded into a JWT token and sent to the front-end to be used in Ajax requests.
