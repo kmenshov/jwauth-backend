@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   spec.required_ruby_version = '~> 2.7'
+  spec.add_dependency 'jwt'
   spec.add_dependency 'rails', '~> 6.0.3', '>= 6.0.3.3'
 
   spec.add_development_dependency 'pg'
